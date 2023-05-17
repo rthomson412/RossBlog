@@ -10,7 +10,7 @@ app.use(express.static('public'));
 // Templating engine
 app.use(expressLayout);
 app.set('layout', './layouts/main');
-app.set('view engiine', 'ejs');
+app.set('view engine', 'ejs');
 
 
 app.use('/', require('./server/routes/main'));
