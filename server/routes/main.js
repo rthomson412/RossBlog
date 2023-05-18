@@ -2,7 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('', (req, res) => {
-    res.render('index');
+    const locals = {
+        title: "RossBlog",
+        description: "Created with NodeJS, MongoDB and Express"
+    }
+    res.render('index', { locals });
 });
 
 router.get('/about', (req, res) => {
