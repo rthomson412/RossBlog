@@ -2,12 +2,18 @@ const express = require('express');
 const router = express.Router();
 const Post = require('../models/Post');
 
-router.get('', (req, res) => {
+router.get('', async (req, res) => {
     const locals = {
         title: "RossBlog",
         description: "Created with NodeJS, MongoDB and Express"
     }
-    res.render('index', { locals });
+    try {
+        const data = await Post.find();
+        res.render('index', { locals, data });
+    } catch (error) {
+        console.log(error);
+    }
+    
 });
 
 // function insertPostData () {
