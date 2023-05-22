@@ -115,9 +115,10 @@ img {
 }
 
 .header__nav {
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   grid-area: menu;
+  margin-top: 1rem;
 }
 
 .header__logo, .header__nav, .header__button {
@@ -146,7 +147,8 @@ img {
 }
 
 .header__button button:hover {
-  border: 2px solid var(--black);
+  /* border: 2px solid var(--black); */
+  text-decoration: underline;
 }
 
 /* Header -> Navigation */
@@ -302,8 +304,8 @@ img {
 .searchBar {
   visibility: hidden;
   transform: translateY(-100px);
-  background-color: var(--black);
-  padding: 4px 0;
+  background-color: none;
+  padding: 1rem 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -313,6 +315,7 @@ img {
 .searchBar.open {
   transform: translateY(0);
   transition: transform 0.1s;
+  visibility: hidden;
 }
 
 .searchBar input {
@@ -322,9 +325,9 @@ img {
 
 #searchClose {
   position: absolute;
-  top: 0;
-  right: 0;
-  color: var(--gray-light);
+  top: 1rem;
+  right: 1rem;
+  color: var(--black);
   padding: 15px;
 }
 
