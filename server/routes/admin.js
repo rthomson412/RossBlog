@@ -30,7 +30,7 @@ router.post('/admin', async (req, res) => {
     try {
         const { username, password } = req.body;
         console.log(req.body);
-        res.render('admin/index', { locals, layout: adminLayout });
+        res.redirect('admin')
     } catch (error) {
         console.log(error);
     }
