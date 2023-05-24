@@ -155,7 +155,7 @@ img {
 .header__nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   font-weight: 600;
   padding: 0;
 }
