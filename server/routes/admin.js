@@ -5,9 +5,28 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const jwtSecret = process.env.JWT_SECRET;
-
-
 const adminLayout = '../views/layouts/admin';
+
+/**
+ * 
+ * Check Login
+*/
+const authMiddleware = (req, res, next ) => {
+    const token = req.cookies.token;
+  
+    if(!token) {
+      return res.status(401).json( { message: 'Unauthorized'} );
+    }
+  
+    try {
+      const decoded = jwt.verify(token, jwtSecret);
+      req.userId = decoded.userId;
+      next();
+    } catch(error) {
+      res.status(401).json( { message: 'Unauthorized'} );
+    }
+  };
+
 /**
  * GET /
  * Admin - Login Page
@@ -55,7 +74,7 @@ router.post('/admin', async (req, res) => {
   });
 
 
-router.get('/dashboard', async  (req, res) => {
+router.get('/dashboard', authMiddleware, async  (req, res) => {
     res.render('admin/dashboard');
 });
 
