@@ -4,6 +4,7 @@ const Post = require('../models/Post');
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const { get } = require('mongoose');
 const jwtSecret = process.env.JWT_SECRET;
 const adminLayout = '../views/layouts/admin';
 
@@ -72,11 +73,29 @@ router.post('/admin', async (req, res) => {
       console.log(error);
     }
   });
-
-
-router.get('/dashboard', authMiddleware, async  (req, res) => {
-    res.render('admin/dashboard');
-});
+/**
+ * GET /
+ * Admin Dashboard
+*/
+router.get('/dashboard', authMiddleware, async (req, res) => {
+    try {
+      const locals = {
+        title: 'Dashboard',
+        description: 'Simple Blog created with NodeJs, Express & MongoDb.'
+      }
+  
+      const data = await Post.find();
+      res.render('admin/dashboard', {
+        locals,
+        data,
+        layout: adminLayout
+      });
+  
+    } catch (error) {
+      console.log(error);
+    }
+  
+  });
 
 
 
