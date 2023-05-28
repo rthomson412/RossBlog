@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
 
+
 :root {
-  --black: #1c1c1c;
+  --accent: rgb(195, 252, 184);
   --gray: #7E7E7E;
   --gray-light: #E4E4E4;
   --red: #b30000;
@@ -14,14 +15,15 @@
 
 body {
   font-family: 'Voltaire', sans-serif;
-  color: var(--black);
+  color: var(--accent);
   font-size: var(--font-size-base);
-  background-color: #FAF5EE;
-  background-image: url("/images/img-noise-361x370.png");
+  background-color: #1f1f25;
+  /* background-color: #FAF5EE;
+  background-image: url("/images/img-noise-361x370.png"); */
   margin: 0;
 }
 
-a { color: var(--black); }
+a { color: var(--accent); }
 h1 { font-size: var(--font-size-xl); }
 h2 { font-size: var(--font-size-lg); }
 h3 { font-size: var(--font-size-md); }
@@ -43,9 +45,9 @@ textarea {
 
 .btn {
     font-family: 'Voltaire', sans-serif;
-  background-color: var(--black);
+  background-color: var(--accent);
   border: none;
-  color: white; 
+  color: #1f1f25; 
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px; 
@@ -54,7 +56,9 @@ textarea {
 
 .btn-delete {
   padding: 10px 16px;
-  background-color: var(--red);
+  background-color: var(--accent);
+  color: #b30000;
+  text-decoration:underline;
 }
 
 
@@ -143,11 +147,11 @@ img {
   border: 2px solid transparent;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--accent);
 }
 
 .header__button button:hover {
-  /* border: 2px solid var(--black); */
+  /* border: 2px solid var(--accent); */
   text-decoration: underline;
 }
 
@@ -285,8 +289,8 @@ img {
 
 .admin-post-controls .btn  {
   display: inline-block;
-  background-color: var(--black);
-  color: var(--gray-light);
+  background-color: var(--accent);
+  color: #1f1f25;
   border: 0;
   text-decoration: none;
   font-size: .8rem;
@@ -298,6 +302,10 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+}
+
+.edittitle{
+  border-radius: 5px;
 }
 
 /* SeachBar */
@@ -327,7 +335,7 @@ img {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: var(--black);
+  color: var(--accent);
   padding: 15px;
 }
 
@@ -341,5 +349,5 @@ img {
 }
 
 .pagination:hover {
-  color: var(--black);
+  color: var(--accent);
 }
