@@ -1,4 +1,3 @@
 # LINKS
 
-[Netlify link](https://boisterous-starship-786d80.netlify.app/)
-[Onrender link](https://rosscraigblog.onrender.com/)
+[Website hosted on Render](https://rosscraigblog.onrender.com/)
