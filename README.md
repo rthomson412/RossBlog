@@ -3,7 +3,7 @@
 
 
 <p align="center">
-    <img src="./public/grab.png" alt="mern" height="100" />
+    <img src="./public/grab.png" alt="mern" height="250" width="200 />
 </p>
 <h1 align="center">Ross's Tech Blog</h1>
 
