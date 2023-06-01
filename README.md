@@ -1,10 +1,8 @@
 # LINKS
 
 
+<img src="./public/screenshot.png" alt="blog" height="250" width="200 />
 
-<p align="center">
-    <img src="./public/screenshot.png" alt="blog" height="250" width="200 />
-</p>
 <br/>
 <h1 align="center">Ross's Tech Blog</h1>
 
