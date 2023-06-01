@@ -5,6 +5,7 @@
 <p align="center">
     <img src="./public/grab.png" alt="mern" height="250" width="200 />
 </p>
+<br/>
 <h1 align="center">Ross's Tech Blog</h1>
 
 # A blog for documenting my encounters in learning software development ⭐
