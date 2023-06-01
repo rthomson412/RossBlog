@@ -3,7 +3,7 @@
 
 
 <p align="center">
-    <img src="./public/grab.png" alt="mern" height="250" width="200 />
+    <img src="./public/grab.png" alt="blog" height="250" width="200 />
 </p>
 <br/>
 <h1 align="center">Ross's Tech Blog</h1>
@@ -33,9 +33,6 @@ In the root of the project directory, you can run:
 
 ### `npm install`
 Install dependencies for both server and client<br>
-
-### `npm run seed`
-Populates the database with some faux users/ posts/ friends.<br>
 
 ### `npm run develop`
 
