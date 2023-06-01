@@ -1,5 +1,9 @@
-<p>
-    <img src="./public/screenshot.png" alt="blog" height="250" width="200 />
+# LINKS
+
+
+
+<p align="center" height="250" width="200">
+    <img src="./public/screenshot.png" alt="blog"/>
 </p>
 
 # A blog for documenting my encounters in learning software development ⭐
