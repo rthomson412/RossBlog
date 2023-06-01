@@ -1,10 +1,6 @@
-# LINKS
-
-
-<img src="./public/screenshot.png" alt="blog" height="250" width="200 />
-
-<br/>
-<h1 align="center">Ross's Tech Blog</h1>
+<p>
+    <img src="./public/screenshot.png" alt="blog" height="250" width="200 />
+</p>
 
 # A blog for documenting my encounters in learning software development ⭐
 
