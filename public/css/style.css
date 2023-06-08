@@ -261,6 +261,9 @@ img {
 
 .article {
   white-space: pre-wrap;
+  width: (65ch, 100% - 4rem);
+  margin-inline: auto;
+  line-height: 1.25rem;
 }
 
 
@@ -337,6 +340,12 @@ img {
   right: 1rem;
   color: var(--accent);
   padding: 15px;
+}
+
+@media (max-width: 1068px) {
+  #searchClose {
+    color: black;
+  }
 }
 
 
