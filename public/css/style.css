@@ -251,7 +251,7 @@ img {
 }
 
 .article-ul:hover li {
-  filter: blur(3px);
+  filter: blur(0.05rem);
 }
 
 .article-ul:hover li:hover {
