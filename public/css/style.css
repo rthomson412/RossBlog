@@ -261,6 +261,7 @@ img {
 
 .article {
   white-space: pre-wrap;
+  font-size:larger;
   width: (65ch, 100% - 4rem);
   margin-inline: auto;
   line-height: 1.25rem;
